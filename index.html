@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Best Electric | Electricians in Modesto and Merced, CA (Demo)</title>
+<meta name="description" content="Demo redesign for Best Electric: licensed electricians serving Modesto and Merced for residential, commercial, industrial and agricultural work. 24/7 emergency service, free estimates.">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { font-family:"Segoe UI",Helvetica,Arial,sans-serif; background:#f6f7f9; color:#1c2530; line-height:1.6; }
+  a { color:#b35c00; }
+  .demo-bar { background:#11181f; color:#ffb340; text-align:center; font-size:.82rem; padding:8px 14px; letter-spacing:.04em; text-transform:uppercase; }
+  .emergency-bar { background:#c33d00; color:#fff; text-align:center; font-weight:700; padding:9px 14px; font-size:.95rem; }
+  .emergency-bar a { color:#fff; text-decoration:underline; }
+  header { position:sticky; top:0; z-index:20; background:#0e2a47; box-shadow:0 2px 10px rgba(0,0,0,.25); }
+  .nav { max-width:1120px; margin:0 auto; padding:12px 20px; display:flex; flex-wrap:wrap; gap:10px 20px; align-items:center; justify-content:space-between; }
+  .brand { display:flex; align-items:center; gap:12px; text-decoration:none; }
+  .brand img { width:34px; height:41px; object-fit:cover; border-radius:4px; background:#fff; }
+  .brand .name { color:#fff; font-size:1.35rem; font-weight:800; letter-spacing:.02em; line-height:1.1; }
+  .brand .sub { color:#ffb340; font-size:.72rem; text-transform:uppercase; letter-spacing:.18em; }
+  .nav .links a { color:#dbe6f2; text-decoration:none; font-size:.92rem; margin-left:18px; font-weight:600; }
+  .nav .links a:hover { color:#ffb340; }
+  .callbtns { display:flex; gap:8px; flex-wrap:wrap; }
+  .callbtn { background:#ff8a00; color:#14100a; font-weight:800; text-decoration:none; padding:9px 16px; border-radius:6px; font-size:.92rem; }
+  .callbtn.alt { background:#fff; color:#0e2a47; }
+  .hero { background:linear-gradient(rgba(8,24,42,.78),rgba(8,24,42,.66)), url('truck-hero.jpg') center/cover no-repeat; color:#fff; }
+  .hero-in { max-width:1120px; margin:0 auto; padding:84px 20px 76px; }
+  .hero .kicker { color:#ffb340; font-weight:800; letter-spacing:.16em; text-transform:uppercase; font-size:.8rem; margin-bottom:14px; }
+  .hero h1 { font-size:2.9rem; line-height:1.12; max-width:640px; margin-bottom:16px; }
+  .hero p.tag { font-size:1.18rem; max-width:600px; color:#e8eef5; margin-bottom:10px; }
+  .hero p.stars { color:#ffd27a; font-weight:700; margin-bottom:28px; }
+  .hero .cta { display:flex; gap:12px; flex-wrap:wrap; }
+  .btn { display:inline-block; background:#ff8a00; color:#14100a; font-weight:800; text-decoration:none; padding:14px 28px; border-radius:6px; font-size:1rem; }
+  .btn.ghost { background:transparent; color:#fff; border:2px solid #fff; }
+  .trust { background:#0e2a47; color:#fff; }
+  .trust-in { max-width:1120px; margin:0 auto; padding:20px; display:grid; grid-template-columns:repeat(4,1fr); gap:14px; text-align:center; }
+  @media (max-width:760px){ .trust-in{ grid-template-columns:repeat(2,1fr); } .hero h1{ font-size:2.1rem; } }
+  .trust .big { font-size:1.25rem; font-weight:800; color:#ffb340; }
+  .trust .small { font-size:.85rem; color:#cfdce9; }
+  section { max-width:1120px; margin:0 auto; padding:64px 20px 10px; }
+  section h2 { font-size:2rem; color:#0e2a47; margin-bottom:8px; }
+  section .lede { color:#4a5866; margin-bottom:28px; max-width:680px; }
+  .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+  @media (max-width:860px){ .grid{ grid-template-columns:repeat(2,1fr); } }
+  @media (max-width:560px){ .grid{ grid-template-columns:1fr; } }
+  .svc { background:#fff; border:1px solid #dde3ea; border-top:4px solid #ff8a00; border-radius:8px; padding:22px; }
+  .svc h3 { color:#0e2a47; font-size:1.12rem; margin-bottom:6px; }
+  .svc p { color:#4a5866; font-size:.93rem; }
+  .sectors { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+  @media (max-width:860px){ .sectors{ grid-template-columns:repeat(2,1fr); } }
+  @media (max-width:520px){ .sectors{ grid-template-columns:1fr; } }
+  .sector { background:#0e2a47; color:#fff; border-radius:8px; padding:24px 20px; text-align:center; font-weight:800; font-size:1.05rem; }
+  .sector span { display:block; font-weight:400; font-size:.86rem; color:#cfdce9; margin-top:6px; }
+  .split { display:grid; grid-template-columns:1fr 1fr; gap:28px; align-items:center; }
+  @media (max-width:760px){ .split{ grid-template-columns:1fr; } }
+  .split img { width:100%; border-radius:8px; display:block; }
+  .gallery { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+  @media (max-width:760px){ .gallery{ grid-template-columns:repeat(2,1fr); } }
+  .gallery figure { background:#fff; border:1px solid #dde3ea; border-radius:8px; overflow:hidden; }
+  .gallery img { width:100%; height:210px; object-fit:cover; display:block; }
+  .gallery figcaption { padding:10px 14px; font-size:.88rem; color:#4a5866; font-weight:600; }
+  .locs { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  @media (max-width:640px){ .locs{ grid-template-columns:1fr; } }
+  .loc { background:#fff; border:1px solid #dde3ea; border-radius:8px; padding:26px; }
+  .loc h3 { color:#0e2a47; font-size:1.3rem; margin-bottom:4px; }
+  .loc .addr { color:#4a5866; margin-bottom:14px; }
+  .loc .phone { font-size:1.35rem; font-weight:800; color:#c33d00; text-decoration:none; }
+  form { background:#fff; border:1px solid #dde3ea; border-radius:8px; padding:28px; }
+  form label { display:block; font-weight:700; font-size:.9rem; color:#0e2a47; margin:14px 0 5px; }
+  form input, form select, form textarea { width:100%; padding:11px 12px; border:1px solid #b9c4d0; border-radius:6px; font-size:1rem; font-family:inherit; }
+  form button { margin-top:20px; background:#ff8a00; color:#14100a; border:0; font-weight:800; padding:14px 30px; border-radius:6px; font-size:1rem; cursor:pointer; }
+  .formnote { font-size:.85rem; color:#71808f; margin-top:12px; }
+  #thanks { display:none; background:#e8f6e9; border:1px solid #9ccc9f; color:#205723; border-radius:8px; padding:18px; margin-top:16px; font-weight:600; }
+  .hiring { display:grid; grid-template-columns:220px 1fr; gap:28px; align-items:center; background:#fff; border:1px solid #dde3ea; border-radius:8px; padding:26px; }
+  @media (max-width:640px){ .hiring{ grid-template-columns:1fr; } }
+  .hiring img { width:100%; border-radius:6px; display:block; }
+  footer { background:#0b1c30; color:#cfdce9; margin-top:70px; }
+  .foot { max-width:1120px; margin:0 auto; padding:40px 20px; display:flex; flex-wrap:wrap; gap:18px 40px; justify-content:space-between; font-size:.92rem; }
+  footer .fname { color:#fff; font-weight:800; font-size:1.1rem; }
+  footer a { color:#ffb340; text-decoration:none; }
+  .sticky-call { display:none; }
+  @media (max-width:640px){
+    .sticky-call { display:flex; position:fixed; bottom:0; left:0; right:0; z-index:30; }
+    .sticky-call a { flex:1; text-align:center; background:#ff8a00; color:#14100a; font-weight:800; padding:14px 6px; text-decoration:none; font-size:.95rem; }
+    .sticky-call a.alt { background:#0e2a47; color:#fff; }
+    body { padding-bottom:52px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="demo-bar">Demo website prepared for Best Electric by Fullstacks. Not the live company site.</div>
+<div class="emergency-bar">24/7 Emergency Service: Modesto <a href="tel:+12095690120">(209) 569-0120</a> | Merced <a href="tel:+12097232061">(209) 723-2061</a></div>
+
+<header>
+  <div class="nav">
+    <a class="brand" href="#top">
+      <img src="bolt-logo.jpg" alt="Best Electric lightning bolt logo">
+      <span><span class="name">Best Electric</span><br><span class="sub">Modesto | Merced</span></span>
+    </a>
+    <nav class="links">
+      <a href="#services">Services</a><a href="#work">Our Work</a><a href="#about">About</a><a href="#locations">Locations</a><a href="#estimate">Free Estimate</a>
+    </nav>
+    <div class="callbtns">
+      <a class="callbtn" href="tel:+12095690120">Call Modesto</a>
+      <a class="callbtn alt" href="tel:+12097232061">Call Merced</a>
+    </div>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="hero-in">
+    <div class="kicker">Licensed Electricians, License #392737 (C10)</div>
+    <h1>Go with someone who's been there.</h1>
+    <p class="tag">Skilled Craftsmanship, Professional Quality Service, Impeccable Performance &amp; Competitive Pricing.</p>
+    <p class="stars">Rated 4.7 stars from 44 customer reviews.</p>
+    <div class="cta">
+      <a class="btn" href="#estimate">Request a Free Estimate</a>
+      <a class="btn ghost" href="tel:+12095690120">Call (209) 569-0120</a>
+    </div>
+  </div>
+</div>
+
+<div class="trust">
+  <div class="trust-in">
+    <div><div class="big">24/7</div><div class="small">Emergency Service</div></div>
+    <div><div class="big">Free</div><div class="small">Estimates</div></div>
+    <div><div class="big">Senior</div><div class="small">Discounts Available</div></div>
+    <div><div class="big">Licensed</div><div class="small">C10 License #392737</div></div>
+  </div>
+</div>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <p class="lede">When you have commercial or residential work that needs to be done quickly and with an eye for quality, look no further than Best Electric.</p>
+  <div class="grid">
+    <div class="svc"><h3>Troubleshooting</h3><p>Fast diagnosis of electrical problems in homes, businesses, shops and fields.</p></div>
+    <div class="svc"><h3>Repairs</h3><p>Complete repair service from the crew locals call first.</p></div>
+    <div class="svc"><h3>Installations</h3><p>New equipment, lighting and systems installed right the first time.</p></div>
+    <div class="svc"><h3>Upgrades</h3><p>Service panel upgrades and improvements that bring older systems up to date.</p></div>
+    <div class="svc"><h3>Remodeling</h3><p>Electrical work for remodels, additions and tenant improvements.</p></div>
+    <div class="svc"><h3>New Construction</h3><p>Wiring for new builds, from ground-up residential to commercial projects.</p></div>
+    <div class="svc"><h3>Improvements</h3><p>LED retrofitting, lighting surveys and efficiency improvements.</p></div>
+    <div class="svc"><h3>High Voltage</h3><p>High voltage construction and service by seasoned, certified pros.</p></div>
+    <div class="svc"><h3>Solar Installation</h3><p>Solar installation backed by decades of electrical experience.</p></div>
+    <div class="svc"><h3>Fire Alarm &amp; Security</h3><p>Fire alarm, access control, structured cable and CCTV systems.</p></div>
+  </div>
+</section>
+
+<section id="sectors">
+  <h2>Who We Serve</h2>
+  <p class="lede">One licensed crew for four kinds of customers across the Modesto and Merced area.</p>
+  <div class="sectors">
+    <div class="sector">Residential<span>Homes, remodels and repairs</span></div>
+    <div class="sector">Commercial<span>Offices, retail and tenant improvements</span></div>
+    <div class="sector">Industrial<span>Plants, panels and high voltage work</span></div>
+    <div class="sector">Agricultural<span>Pumps, shops and field power</span></div>
+  </div>
+</section>
+
+<section id="work">
+  <h2>Recent Work</h2>
+  <p class="lede">Real Best Electric trucks, crews and job sites, photographed on the job.</p>
+  <div class="gallery">
+    <figure><img src="truck-hero.jpg" alt="Best Electric service truck on site"><figcaption>The Best Electric truck, ready to roll</figcaption></figure>
+    <figure><img src="work-panels.jpg" alt="Industrial electrical panels installed by Best Electric"><figcaption>Industrial panel installation</figcaption></figure>
+    <figure><img src="work-agriculture.jpg" alt="Agricultural pump electrical work with Best Electric truck"><figcaption>Agricultural pump power</figcaption></figure>
+    <figure><img src="work-meters.jpg" alt="Commercial meter bank wired by Best Electric"><figcaption>Commercial meter bank</figcaption></figure>
+    <figure><img src="work-bucket-truck.jpg" alt="Best Electric bucket truck and electrician on a job site"><figcaption>Bucket truck work</figcaption></figure>
+    <figure><img src="work-crew.jpg" alt="Best Electric electricians working on electrical panels"><figcaption>Our electricians at work</figcaption></figure>
+    <figure><img src="work-meter-install.jpg" alt="New meter pedestal installed by Best Electric"><figcaption>New service installation</figcaption></figure>
+    <figure><img src="work-kitchen.jpg" alt="Kitchen remodel lighting completed by Best Electric"><figcaption>Kitchen remodel lighting</figcaption></figure>
+    <figure><img src="truck-pano.jpg" alt="Best Electric white work truck, side view"><figcaption>Serving Modesto and Merced</figcaption></figure>
+  </div>
+</section>
+
+<section id="about">
+  <div class="split">
+    <div>
+      <h2>Seasoned Pros</h2>
+      <p style="color:#4a5866; margin-bottom:14px;">All of our electricians possess years of on-the-job experience. Not only that, they're also industry certified and committed to keeping up with the latest advances in the field. You can rest easy, because your electrical job will be in the best and most skilled hands that it can be.</p>
+      <p style="color:#4a5866;">We have the most highly-trained, industry certified electricians with years of experience working for both commercial and residential customers. License #392737 (C10).</p>
+    </div>
+    <img src="work-crew.jpg" alt="Best Electric crew working on a panel installation">
+  </div>
+</section>
+
+<section id="locations">
+  <h2>Two Locations, One Call Away</h2>
+  <p class="lede">Call the office closest to you. Both lines reach the same seasoned crew.</p>
+  <div class="locs">
+    <div class="loc">
+      <h3>Modesto</h3>
+      <p class="addr">1322 7th St, Modesto, CA 95354</p>
+      <a class="phone" href="tel:+12095690120">(209) 569-0120</a>
+    </div>
+    <div class="loc">
+      <h3>Merced</h3>
+      <p class="addr">2160 Wardrobe Ave, Merced, CA 95341</p>
+      <a class="phone" href="tel:+12097232061">(209) 723-2061</a>
+    </div>
+  </div>
+</section>
+
+<section id="estimate">
+  <h2>Request a Free Estimate</h2>
+  <p class="lede">Tell us what you need and which location is closer. In an emergency, call instead, we answer 24/7.</p>
+  <form id="estform">
+    <label for="name">Your name</label>
+    <input id="name" name="name" type="text" placeholder="Full name" required>
+    <label for="phone">Phone</label>
+    <input id="phone" name="phone" type="tel" placeholder="Best number to reach you" required>
+    <label for="loc">Closest location</label>
+    <select id="loc" name="loc">
+      <option>Modesto</option>
+      <option>Merced</option>
+    </select>
+    <label for="svc">What do you need?</label>
+    <select id="svc" name="svc">
+      <option>Troubleshooting</option><option>Repairs</option><option>Installations</option>
+      <option>Upgrades</option><option>Remodeling</option><option>New Construction</option>
+      <option>Improvements</option><option>High Voltage</option><option>Solar Installation</option>
+      <option>Fire Alarm &amp; Security</option><option>Emergency Service</option><option>Something else</option>
+    </select>
+    <label for="msg">Tell us about the job</label>
+    <textarea id="msg" name="msg" rows="4" placeholder="A few details help us send the right electrician."></textarea>
+    <button type="submit">Request My Free Estimate</button>
+    <p class="formnote">Demo form: this preview does not send anything yet. On the live site, requests go straight to the Best Electric office.</p>
+  </form>
+  <div id="thanks">Thanks, your request is noted. On the live site this would go straight to Best Electric, and for anything urgent you can call Modesto at (209) 569-0120 or Merced at (209) 723-2061 any time, day or night.</div>
+</section>
+
+<section id="hiring">
+  <div class="hiring">
+    <img src="now-hiring.png" alt="Now Hiring, Apply Today sign from the Best Electric website">
+    <div>
+      <h2 style="margin-bottom:8px;">Join the Crew</h2>
+      <p style="color:#4a5866;">Best Electric is hiring. If you are an electrician who takes pride in skilled craftsmanship, call the Modesto office at <a href="tel:+12095690120">(209) 569-0120</a> and ask about applying today.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot">
+    <div>
+      <div class="fname">Best Electric</div>
+      <div>License #392737 (C10)<br>24/7 Emergency Service | Senior Discounts | Free Estimates</div>
+    </div>
+    <div>
+      Modesto: 1322 7th St, Modesto, CA 95354<br>
+      <a href="tel:+12095690120">(209) 569-0120</a>
+    </div>
+    <div>
+      Merced: 2160 Wardrobe Ave, Merced, CA 95341<br>
+      <a href="tel:+12097232061">(209) 723-2061</a>
+    </div>
+    <div>Demo redesign by Fullstacks.<br>Content and photos from bestelectric.us.</div>
+  </div>
+</footer>
+
+<div class="sticky-call">
+  <a href="tel:+12095690120">Call Modesto</a>
+  <a class="alt" href="tel:+12097232061">Call Merced</a>
+</div>
+
+<script>
+  document.getElementById('estform').addEventListener('submit', function(e){
+    e.preventDefault();
+    document.getElementById('thanks').style.display = 'block';
+    document.getElementById('thanks').scrollIntoView({behavior:'smooth', block:'center'});
+  });
+</script>
+</body>
+</html>
