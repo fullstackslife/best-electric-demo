@@ -1,0 +1,53 @@
+{
+  "slug": "sample-hvac",
+  "businessName": "Summit Air Heating and Cooling (Sample)",
+  "tradePlural": "HVAC Technicians",
+  "titleArea": "Sample City, ST",
+  "areaShort": "Sample City",
+  "brandSub": "Sample City",
+  "metaDescription": "Demo redesign for Summit Air Heating and Cooling (Sample): HVAC technicians serving Sample City for residential and light commercial heating and cooling work. 24/7 emergency service, free estimates.",
+  "emergencyLabel": "24/7 Emergency Service",
+  "licenseLabel": "Sample License #000000 (HVAC)",
+  "licenseShort": "Sample License #000000",
+  "headline": "Comfort you can count on, all year long.",
+  "tagline": "Certified Technicians, Honest Pricing, Same-Day Service &amp; Work Guaranteed.",
+  "locations": [
+    { "name": "Sample City", "address": "123 Placeholder Ave, Sample City, ST 00000", "phoneDisplay": "(555) 014-2000", "phoneTel": "+15550142000" }
+  ],
+  "trustItems": [
+    { "big": "24/7", "small": "Emergency Service" },
+    { "big": "Free", "small": "Estimates" },
+    { "big": "Licensed", "small": "{{licenseShort}}" },
+    { "big": "Flat-Rate", "small": "Pricing Up Front" }
+  ],
+  "servicesLede": "When the heat quits in January or the air conditioning dies in July, look no further than {{businessName}}.",
+  "services": [
+    { "name": "AC Repair", "blurb": "Fast diagnosis and repair of cooling problems in homes and small businesses." },
+    { "name": "Furnace Repair", "blurb": "Heating repairs done right, from igniters to full system troubleshooting." },
+    { "name": "Heat Pump Installation", "blurb": "New heat pump systems sized and installed for year-round efficiency." },
+    { "name": "Duct Cleaning", "blurb": "Cleaner ducts, better airflow and healthier indoor air." },
+    { "name": "Maintenance Plans", "blurb": "Seasonal tune-ups that catch small problems before they become big ones." },
+    { "name": "Thermostat Installation", "blurb": "Smart and programmable thermostats installed and set up for you." },
+    { "name": "Indoor Air Quality", "blurb": "Filters, purifiers and humidity control for a healthier home." },
+    { "name": "Emergency Service", "blurb": "No heat or no cooling at the worst moment? We answer around the clock." }
+  ],
+  "sectorsLede": "One certified crew for homes and small businesses across the Sample City area.",
+  "sectors": [
+    { "name": "Residential", "blurb": "Homes, tune-ups and replacements" },
+    { "name": "Commercial", "blurb": "Offices, retail and rental properties" }
+  ],
+  "aboutHeading": "Certified and Local",
+  "aboutParagraphs": [
+    "Our technicians are certified, background-checked and trained on the latest equipment. You can rest easy, because your comfort system will be in skilled hands.",
+    "This is a sample business created to demonstrate the trades demo template. No real company is depicted. {{licenseLabel}}."
+  ],
+  "locationsHeading": "One Location, One Call Away",
+  "locationsLede": "Call the office and talk to a real person, day or night.",
+  "estimateLede": "Tell us what you need. In an emergency, call instead, we answer 24/7.",
+  "estimateExtraOptions": ["Emergency Service", "Something else"],
+  "messagePlaceholder": "A few details help us send the right technician.",
+  "formNote": "Demo form: this preview does not send anything yet. On the live site, requests go straight to the {{businessName}} office.",
+  "thanksText": "Thanks, your request is noted. On the live site this would go straight to {{businessName}}, and for anything urgent you can call {{locations.0.name}} at {{locations.0.phoneDisplay}} any time, day or night.",
+  "footerHighlights": "24/7 Emergency Service | Upfront Pricing | Free Estimates",
+  "sourceCredit": "Sample content written for this template demo. No real business is depicted."
+}
