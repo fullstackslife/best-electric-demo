@@ -1,0 +1,79 @@
+{
+  "slug": "best-electric",
+  "businessName": "Best Electric",
+  "tradePlural": "Electricians",
+  "titleArea": "Modesto and Merced, CA",
+  "areaShort": "Modesto and Merced",
+  "brandSub": "Modesto | Merced",
+  "metaDescription": "Demo redesign for Best Electric: licensed electricians serving Modesto and Merced for residential, commercial, industrial and agricultural work. 24/7 emergency service, free estimates.",
+  "emergencyLabel": "24/7 Emergency Service",
+  "licenseLabel": "License #392737 (C10)",
+  "licenseShort": "License #392737",
+  "logo": { "src": "bolt-logo.jpg", "alt": "{{businessName}} lightning bolt logo" },
+  "heroImage": "truck-hero.jpg",
+  "headline": "Go with someone who's been there.",
+  "tagline": "Skilled Craftsmanship, Professional Quality Service, Impeccable Performance &amp; Competitive Pricing.",
+  "ratingLine": "Rated 4.7 stars from 44 customer reviews.",
+  "locations": [
+    { "name": "Modesto", "address": "1322 7th St, Modesto, CA 95354", "phoneDisplay": "(209) 569-0120", "phoneTel": "+12095690120" },
+    { "name": "Merced", "address": "2160 Wardrobe Ave, Merced, CA 95341", "phoneDisplay": "(209) 723-2061", "phoneTel": "+12097232061" }
+  ],
+  "trustItems": [
+    { "big": "24/7", "small": "Emergency Service" },
+    { "big": "Free", "small": "Estimates" },
+    { "big": "Senior", "small": "Discounts Available" },
+    { "big": "Licensed", "small": "C10 {{licenseShort}}" }
+  ],
+  "servicesLede": "When you have commercial or residential work that needs to be done quickly and with an eye for quality, look no further than {{businessName}}.",
+  "services": [
+    { "name": "Troubleshooting", "blurb": "Fast diagnosis of electrical problems in homes, businesses, shops and fields." },
+    { "name": "Repairs", "blurb": "Complete repair service from the crew locals call first." },
+    { "name": "Installations", "blurb": "New equipment, lighting and systems installed right the first time." },
+    { "name": "Upgrades", "blurb": "Service panel upgrades and improvements that bring older systems up to date." },
+    { "name": "Remodeling", "blurb": "Electrical work for remodels, additions and tenant improvements." },
+    { "name": "New Construction", "blurb": "Wiring for new builds, from ground-up residential to commercial projects." },
+    { "name": "Improvements", "blurb": "LED retrofitting, lighting surveys and efficiency improvements." },
+    { "name": "High Voltage", "blurb": "High voltage construction and service by seasoned, certified pros." },
+    { "name": "Solar Installation", "blurb": "Solar installation backed by decades of electrical experience." },
+    { "name": "Fire Alarm &amp; Security", "blurb": "Fire alarm, access control, structured cable and CCTV systems." }
+  ],
+  "sectorsLede": "One licensed crew for four kinds of customers across the Modesto and Merced area.",
+  "sectors": [
+    { "name": "Residential", "blurb": "Homes, remodels and repairs" },
+    { "name": "Commercial", "blurb": "Offices, retail and tenant improvements" },
+    { "name": "Industrial", "blurb": "Plants, panels and high voltage work" },
+    { "name": "Agricultural", "blurb": "Pumps, shops and field power" }
+  ],
+  "galleryLede": "Real {{businessName}} trucks, crews and job sites, photographed on the job.",
+  "gallery": [
+    { "src": "truck-hero.jpg", "alt": "{{businessName}} service truck on site", "caption": "The {{businessName}} truck, ready to roll" },
+    { "src": "work-panels.jpg", "alt": "Industrial electrical panels installed by {{businessName}}", "caption": "Industrial panel installation" },
+    { "src": "work-agriculture.jpg", "alt": "Agricultural pump electrical work with {{businessName}} truck", "caption": "Agricultural pump power" },
+    { "src": "work-meters.jpg", "alt": "Commercial meter bank wired by {{businessName}}", "caption": "Commercial meter bank" },
+    { "src": "work-bucket-truck.jpg", "alt": "{{businessName}} bucket truck and electrician on a job site", "caption": "Bucket truck work" },
+    { "src": "work-crew.jpg", "alt": "{{businessName}} electricians working on electrical panels", "caption": "Our electricians at work" },
+    { "src": "work-meter-install.jpg", "alt": "New meter pedestal installed by {{businessName}}", "caption": "New service installation" },
+    { "src": "work-kitchen.jpg", "alt": "Kitchen remodel lighting completed by {{businessName}}", "caption": "Kitchen remodel lighting" },
+    { "src": "truck-pano.jpg", "alt": "{{businessName}} white work truck, side view", "caption": "Serving {{areaShort}}" }
+  ],
+  "aboutHeading": "Seasoned Pros",
+  "aboutParagraphs": [
+    "All of our electricians possess years of on-the-job experience. Not only that, they're also industry certified and committed to keeping up with the latest advances in the field. You can rest easy, because your electrical job will be in the best and most skilled hands that it can be.",
+    "We have the most highly-trained, industry certified electricians with years of experience working for both commercial and residential customers. {{licenseLabel}}."
+  ],
+  "aboutImage": { "src": "work-crew.jpg", "alt": "{{businessName}} crew working on a panel installation" },
+  "locationsHeading": "Two Locations, One Call Away",
+  "locationsLede": "Call the office closest to you. Both lines reach the same seasoned crew.",
+  "estimateLede": "Tell us what you need and which location is closer. In an emergency, call instead, we answer 24/7.",
+  "estimateExtraOptions": ["Emergency Service", "Something else"],
+  "messagePlaceholder": "A few details help us send the right electrician.",
+  "formNote": "Demo form: this preview does not send anything yet. On the live site, requests go straight to the {{businessName}} office.",
+  "thanksText": "Thanks, your request is noted. On the live site this would go straight to {{businessName}}, and for anything urgent you can call {{locations.0.name}} at {{locations.0.phoneDisplay}} or {{locations.1.name}} at {{locations.1.phoneDisplay}} any time, day or night.",
+  "hiring": {
+    "image": { "src": "now-hiring.png", "alt": "Now Hiring, Apply Today sign from the {{businessName}} website" },
+    "heading": "Join the Crew",
+    "bodyHtml": "{{businessName}} is hiring. If you are an electrician who takes pride in skilled craftsmanship, call the {{locations.0.name}} office at <a href=\"tel:{{locations.0.phoneTel}}\">{{locations.0.phoneDisplay}}</a> and ask about applying today."
+  },
+  "footerHighlights": "24/7 Emergency Service | Senior Discounts | Free Estimates",
+  "sourceCredit": "Content and photos from bestelectric.us."
+}

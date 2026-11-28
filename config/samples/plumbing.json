@@ -1,0 +1,53 @@
+{
+  "slug": "sample-plumbing",
+  "businessName": "ProFlow Plumbing (Sample)",
+  "tradePlural": "Plumbers",
+  "titleArea": "Sample City, ST",
+  "areaShort": "Sample City",
+  "brandSub": "Sample City",
+  "metaDescription": "Demo redesign for ProFlow Plumbing (Sample): licensed plumbers serving Sample City for residential and light commercial plumbing work. 24/7 emergency service, free estimates.",
+  "emergencyLabel": "24/7 Emergency Service",
+  "licenseLabel": "Sample License #111111 (Plumbing)",
+  "licenseShort": "Sample License #111111",
+  "headline": "The plumber neighbors recommend.",
+  "tagline": "Licensed Plumbers, Upfront Pricing, Clean Work &amp; Guaranteed Repairs.",
+  "locations": [
+    { "name": "Sample City", "address": "742 Example Street, Sample City, ST 00000", "phoneDisplay": "(555) 014-3100", "phoneTel": "+15550143100" }
+  ],
+  "trustItems": [
+    { "big": "24/7", "small": "Emergency Service" },
+    { "big": "Free", "small": "Estimates" },
+    { "big": "Licensed", "small": "{{licenseShort}}" },
+    { "big": "Upfront", "small": "Pricing, No Surprises" }
+  ],
+  "servicesLede": "From a dripping faucet to a burst pipe at midnight, look no further than {{businessName}}.",
+  "services": [
+    { "name": "Drain Cleaning", "blurb": "Stubborn clogs cleared fast, with camera inspection when needed." },
+    { "name": "Water Heaters", "blurb": "Repair and replacement of tank and tankless water heaters." },
+    { "name": "Leak Detection", "blurb": "We find hidden leaks before they turn into water damage." },
+    { "name": "Repiping", "blurb": "Whole-home repiping with minimal disruption and clean patchwork." },
+    { "name": "Sewer Line Service", "blurb": "Sewer diagnosis, repair and replacement done to code." },
+    { "name": "Fixture Installation", "blurb": "Faucets, toilets, showers and sinks installed right the first time." },
+    { "name": "Bathroom Remodel Plumbing", "blurb": "Rough-in and finish plumbing for remodels and additions." },
+    { "name": "Emergency Plumbing", "blurb": "Burst pipe or flooding? We answer around the clock." }
+  ],
+  "sectorsLede": "One licensed crew for homes and small businesses across the Sample City area.",
+  "sectors": [
+    { "name": "Residential", "blurb": "Homes, repairs and remodels" },
+    { "name": "Commercial", "blurb": "Offices, retail and restaurants" }
+  ],
+  "aboutHeading": "Licensed and Local",
+  "aboutParagraphs": [
+    "Our plumbers are licensed, insured and committed to clean, careful work in your home or business. You can rest easy, because your plumbing will be in skilled hands.",
+    "This is a sample business created to demonstrate the trades demo template. No real company is depicted. {{licenseLabel}}."
+  ],
+  "locationsHeading": "One Location, One Call Away",
+  "locationsLede": "Call the office and talk to a real person, day or night.",
+  "estimateLede": "Tell us what you need. In an emergency, call instead, we answer 24/7.",
+  "estimateExtraOptions": ["Emergency Service", "Something else"],
+  "messagePlaceholder": "A few details help us send the right plumber.",
+  "formNote": "Demo form: this preview does not send anything yet. On the live site, requests go straight to the {{businessName}} office.",
+  "thanksText": "Thanks, your request is noted. On the live site this would go straight to {{businessName}}, and for anything urgent you can call {{locations.0.name}} at {{locations.0.phoneDisplay}} any time, day or night.",
+  "footerHighlights": "24/7 Emergency Service | Upfront Pricing | Free Estimates",
+  "sourceCredit": "Sample content written for this template demo. No real business is depicted."
+}

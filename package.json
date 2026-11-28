@@ -1,0 +1,11 @@
+{
+  "name": "trades-demo-template",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Parameterized trades demo site template (X-08) with sample configs (X-59). Renders a complete demo site from one JSON config file.",
+  "scripts": {
+    "build": "node build.js config/best-electric.json --out .",
+    "build:samples": "node build.js config/samples/hvac.json && node build.js config/samples/plumbing.json && node build.js config/samples/roofing.json",
+    "check": "node render-check.js config/best-electric.json && node render-check.js config/samples/hvac.json --sample && node render-check.js config/samples/plumbing.json --sample && node render-check.js config/samples/roofing.json --sample"
+  }
+}

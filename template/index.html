@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{businessName}} | {{tradePlural}} in {{titleArea}} (Demo)</title>
+<meta name="description" content="{{metaDescription}}">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { font-family:"Segoe UI",Helvetica,Arial,sans-serif; background:#f6f7f9; color:#1c2530; line-height:1.6; }
+  a { color:#b35c00; }
+  .demo-bar { background:#11181f; color:#ffb340; text-align:center; font-size:.82rem; padding:8px 14px; letter-spacing:.04em; text-transform:uppercase; }
+  .emergency-bar { background:#c33d00; color:#fff; text-align:center; font-weight:700; padding:9px 14px; font-size:.95rem; }
+  .emergency-bar a { color:#fff; text-decoration:underline; }
+  header { position:sticky; top:0; z-index:20; background:#0e2a47; box-shadow:0 2px 10px rgba(0,0,0,.25); }
+  .nav { max-width:1120px; margin:0 auto; padding:12px 20px; display:flex; flex-wrap:wrap; gap:10px 20px; align-items:center; justify-content:space-between; }
+  .brand { display:flex; align-items:center; gap:12px; text-decoration:none; }
+  .brand img { width:34px; height:41px; object-fit:cover; border-radius:4px; background:#fff; }
+  .brand .name { color:#fff; font-size:1.35rem; font-weight:800; letter-spacing:.02em; line-height:1.1; }
+  .brand .sub { color:#ffb340; font-size:.72rem; text-transform:uppercase; letter-spacing:.18em; }
+  .nav .links a { color:#dbe6f2; text-decoration:none; font-size:.92rem; margin-left:18px; font-weight:600; }
+  .nav .links a:hover { color:#ffb340; }
+  .callbtns { display:flex; gap:8px; flex-wrap:wrap; }
+  .callbtn { background:#ff8a00; color:#14100a; font-weight:800; text-decoration:none; padding:9px 16px; border-radius:6px; font-size:.92rem; }
+  .callbtn.alt { background:#fff; color:#0e2a47; }
+  .hero { background:linear-gradient(rgba(8,24,42,.78),rgba(8,24,42,.66)){{#if heroImage}}, url('{{heroImage}}') center/cover no-repeat{{/if}}; color:#fff; }
+  .hero-in { max-width:1120px; margin:0 auto; padding:84px 20px 76px; }
+  .hero .kicker { color:#ffb340; font-weight:800; letter-spacing:.16em; text-transform:uppercase; font-size:.8rem; margin-bottom:14px; }
+  .hero h1 { font-size:2.9rem; line-height:1.12; max-width:640px; margin-bottom:16px; }
+  .hero p.tag { font-size:1.18rem; max-width:600px; color:#e8eef5; margin-bottom:10px; }
+  .hero p.stars { color:#ffd27a; font-weight:700; margin-bottom:28px; }
+  .hero .cta { display:flex; gap:12px; flex-wrap:wrap; }
+  .btn { display:inline-block; background:#ff8a00; color:#14100a; font-weight:800; text-decoration:none; padding:14px 28px; border-radius:6px; font-size:1rem; }
+  .btn.ghost { background:transparent; color:#fff; border:2px solid #fff; }
+  .trust { background:#0e2a47; color:#fff; }
+  .trust-in { max-width:1120px; margin:0 auto; padding:20px; display:grid; grid-template-columns:repeat(4,1fr); gap:14px; text-align:center; }
+  @media (max-width:760px){ .trust-in{ grid-template-columns:repeat(2,1fr); } .hero h1{ font-size:2.1rem; } }
+  .trust .big { font-size:1.25rem; font-weight:800; color:#ffb340; }
+  .trust .small { font-size:.85rem; color:#cfdce9; }
+  section { max-width:1120px; margin:0 auto; padding:64px 20px 10px; }
+  section h2 { font-size:2rem; color:#0e2a47; margin-bottom:8px; }
+  section .lede { color:#4a5866; margin-bottom:28px; max-width:680px; }
+  .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+  @media (max-width:860px){ .grid{ grid-template-columns:repeat(2,1fr); } }
+  @media (max-width:560px){ .grid{ grid-template-columns:1fr; } }
+  .svc { background:#fff; border:1px solid #dde3ea; border-top:4px solid #ff8a00; border-radius:8px; padding:22px; }
+  .svc h3 { color:#0e2a47; font-size:1.12rem; margin-bottom:6px; }
+  .svc p { color:#4a5866; font-size:.93rem; }
+  .sectors { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+  @media (max-width:860px){ .sectors{ grid-template-columns:repeat(2,1fr); } }
+  @media (max-width:520px){ .sectors{ grid-template-columns:1fr; } }
+  .sector { background:#0e2a47; color:#fff; border-radius:8px; padding:24px 20px; text-align:center; font-weight:800; font-size:1.05rem; }
+  .sector span { display:block; font-weight:400; font-size:.86rem; color:#cfdce9; margin-top:6px; }
+  .split { display:grid; grid-template-columns:1fr 1fr; gap:28px; align-items:center; }
+  @media (max-width:760px){ .split{ grid-template-columns:1fr; } }
+  .split img { width:100%; border-radius:8px; display:block; }
+  .gallery { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+  @media (max-width:760px){ .gallery{ grid-template-columns:repeat(2,1fr); } }
+  .gallery figure { background:#fff; border:1px solid #dde3ea; border-radius:8px; overflow:hidden; }
+  .gallery img { width:100%; height:210px; object-fit:cover; display:block; }
+  .gallery figcaption { padding:10px 14px; font-size:.88rem; color:#4a5866; font-weight:600; }
+  .locs { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  @media (max-width:640px){ .locs{ grid-template-columns:1fr; } }
+  .loc { background:#fff; border:1px solid #dde3ea; border-radius:8px; padding:26px; }
+  .loc h3 { color:#0e2a47; font-size:1.3rem; margin-bottom:4px; }
+  .loc .addr { color:#4a5866; margin-bottom:14px; }
+  .loc .phone { font-size:1.35rem; font-weight:800; color:#c33d00; text-decoration:none; }
+  form { background:#fff; border:1px solid #dde3ea; border-radius:8px; padding:28px; }
+  form label { display:block; font-weight:700; font-size:.9rem; color:#0e2a47; margin:14px 0 5px; }
+  form input, form select, form textarea { width:100%; padding:11px 12px; border:1px solid #b9c4d0; border-radius:6px; font-size:1rem; font-family:inherit; }
+  form button { margin-top:20px; background:#ff8a00; color:#14100a; border:0; font-weight:800; padding:14px 30px; border-radius:6px; font-size:1rem; cursor:pointer; }
+  .formnote { font-size:.85rem; color:#71808f; margin-top:12px; }
+  #thanks { display:none; background:#e8f6e9; border:1px solid #9ccc9f; color:#205723; border-radius:8px; padding:18px; margin-top:16px; font-weight:600; }
+  .hiring { display:grid; grid-template-columns:220px 1fr; gap:28px; align-items:center; background:#fff; border:1px solid #dde3ea; border-radius:8px; padding:26px; }
+  @media (max-width:640px){ .hiring{ grid-template-columns:1fr; } }
+  .hiring img { width:100%; border-radius:6px; display:block; }
+  footer { background:#0b1c30; color:#cfdce9; margin-top:70px; }
+  .foot { max-width:1120px; margin:0 auto; padding:40px 20px; display:flex; flex-wrap:wrap; gap:18px 40px; justify-content:space-between; font-size:.92rem; }
+  footer .fname { color:#fff; font-weight:800; font-size:1.1rem; }
+  footer a { color:#ffb340; text-decoration:none; }
+  .sticky-call { display:none; }
+  @media (max-width:640px){
+    .sticky-call { display:flex; position:fixed; bottom:0; left:0; right:0; z-index:30; }
+    .sticky-call a { flex:1; text-align:center; background:#ff8a00; color:#14100a; font-weight:800; padding:14px 6px; text-decoration:none; font-size:.95rem; }
+    .sticky-call a.alt { background:#0e2a47; color:#fff; }
+    body { padding-bottom:52px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="demo-bar">Demo website prepared for {{businessName}} by Fullstacks. Not the live company site.</div>
+<div class="emergency-bar">{{emergencyLabel}}: {{#each locations}}{{name}} <a href="tel:{{phoneTel}}">{{phoneDisplay}}</a>{{#unless @last}} | {{/unless}}{{/each}}</div>
+
+<header>
+  <div class="nav">
+    <a class="brand" href="#top">
+      {{#if logo}}<img src="{{logo.src}}" alt="{{logo.alt}}">{{/if}}
+      <span><span class="name">{{businessName}}</span><br><span class="sub">{{brandSub}}</span></span>
+    </a>
+    <nav class="links">
+      <a href="#services">Services</a><a href="#work">Our Work</a><a href="#about">About</a><a href="#locations">Locations</a><a href="#estimate">Free Estimate</a>
+    </nav>
+    <div class="callbtns">
+{{#each locations}}      <a class="callbtn{{#unless @first}} alt{{/unless}}" href="tel:{{phoneTel}}">Call {{name}}</a>
+{{/each}}    </div>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="hero-in">
+    <div class="kicker">Licensed {{tradePlural}}, {{licenseLabel}}</div>
+    <h1>{{headline}}</h1>
+    <p class="tag">{{tagline}}</p>
+{{#if ratingLine}}    <p class="stars">{{ratingLine}}</p>
+{{/if}}    <div class="cta">
+      <a class="btn" href="#estimate">Request a Free Estimate</a>
+      <a class="btn ghost" href="tel:{{locations.0.phoneTel}}">Call {{locations.0.phoneDisplay}}</a>
+    </div>
+  </div>
+</div>
+
+<div class="trust">
+  <div class="trust-in">
+{{#each trustItems}}    <div><div class="big">{{big}}</div><div class="small">{{small}}</div></div>
+{{/each}}  </div>
+</div>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <p class="lede">{{servicesLede}}</p>
+  <div class="grid">
+{{#each services}}    <div class="svc"><h3>{{name}}</h3><p>{{blurb}}</p></div>
+{{/each}}  </div>
+</section>
+
+<section id="sectors">
+  <h2>Who We Serve</h2>
+  <p class="lede">{{sectorsLede}}</p>
+  <div class="sectors">
+{{#each sectors}}    <div class="sector">{{name}}<span>{{blurb}}</span></div>
+{{/each}}  </div>
+</section>
+
+{{#if gallery}}<section id="work">
+  <h2>Recent Work</h2>
+  <p class="lede">{{galleryLede}}</p>
+  <div class="gallery">
+{{#each gallery}}    <figure><img src="{{src}}" alt="{{alt}}"><figcaption>{{caption}}</figcaption></figure>
+{{/each}}  </div>
+</section>
+{{/if}}
+<section id="about">
+  <div class="split">
+    <div>
+      <h2>{{aboutHeading}}</h2>
+      <p style="color:#4a5866; margin-bottom:14px;">{{aboutParagraphs.0}}</p>
+      <p style="color:#4a5866;">{{aboutParagraphs.1}}</p>
+    </div>
+    {{#if aboutImage}}<img src="{{aboutImage.src}}" alt="{{aboutImage.alt}}">{{/if}}
+  </div>
+</section>
+
+<section id="locations">
+  <h2>{{locationsHeading}}</h2>
+  <p class="lede">{{locationsLede}}</p>
+  <div class="locs">
+{{#each locations}}    <div class="loc">
+      <h3>{{name}}</h3>
+      <p class="addr">{{address}}</p>
+      <a class="phone" href="tel:{{phoneTel}}">{{phoneDisplay}}</a>
+    </div>
+{{/each}}  </div>
+</section>
+
+<section id="estimate">
+  <h2>Request a Free Estimate</h2>
+  <p class="lede">{{estimateLede}}</p>
+  <form id="estform">
+    <label for="name">Your name</label>
+    <input id="name" name="name" type="text" placeholder="Full name" required>
+    <label for="phone">Phone</label>
+    <input id="phone" name="phone" type="tel" placeholder="Best number to reach you" required>
+    <label for="loc">Closest location</label>
+    <select id="loc" name="loc">
+{{#each locations}}      <option>{{name}}</option>
+{{/each}}    </select>
+    <label for="svc">What do you need?</label>
+    <select id="svc" name="svc">
+{{#each services}}      <option>{{name}}</option>
+{{/each}}{{#each estimateExtraOptions}}      <option>{{.}}</option>
+{{/each}}    </select>
+    <label for="msg">Tell us about the job</label>
+    <textarea id="msg" name="msg" rows="4" placeholder="{{messagePlaceholder}}"></textarea>
+    <button type="submit">Request My Free Estimate</button>
+    <p class="formnote">{{formNote}}</p>
+  </form>
+  <div id="thanks">{{thanksText}}</div>
+</section>
+
+{{#if hiring}}<section id="hiring">
+  <div class="hiring">
+    {{#if hiring.image}}<img src="{{hiring.image.src}}" alt="{{hiring.image.alt}}">{{/if}}
+    <div>
+      <h2 style="margin-bottom:8px;">{{hiring.heading}}</h2>
+      <p style="color:#4a5866;">{{hiring.bodyHtml}}</p>
+    </div>
+  </div>
+</section>
+{{/if}}
+<footer>
+  <div class="foot">
+    <div>
+      <div class="fname">{{businessName}}</div>
+      <div>{{licenseLabel}}<br>{{footerHighlights}}</div>
+    </div>
+{{#each locations}}    <div>
+      {{name}}: {{address}}<br>
+      <a href="tel:{{phoneTel}}">{{phoneDisplay}}</a>
+    </div>
+{{/each}}    <div>Demo redesign by Fullstacks.<br>{{sourceCredit}}</div>
+  </div>
+</footer>
+
+<div class="sticky-call">
+{{#each locations}}  <a{{#unless @first}} class="alt"{{/unless}} href="tel:{{phoneTel}}">Call {{name}}</a>
+{{/each}}</div>
+
+<script>
+  document.getElementById('estform').addEventListener('submit', function(e){
+    e.preventDefault();
+    document.getElementById('thanks').style.display = 'block';
+    document.getElementById('thanks').scrollIntoView({behavior:'smooth', block:'center'});
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+{
+  "slug": "sample-roofing",
+  "businessName": "TopShield Roofing (Sample)",
+  "tradePlural": "Roofers",
+  "titleArea": "Sample City, ST",
+  "areaShort": "Sample City",
+  "brandSub": "Sample City",
+  "metaDescription": "Demo redesign for TopShield Roofing (Sample): licensed roofers serving Sample City for residential and light commercial roofing work. Free inspections, written estimates.",
+  "emergencyLabel": "Storm Damage? Call Anytime",
+  "licenseLabel": "Sample License #222222 (Roofing)",
+  "licenseShort": "Sample License #222222",
+  "headline": "A roof over your head, done right.",
+  "tagline": "Licensed Roofers, Written Estimates, Clean Job Sites &amp; Warrantied Work.",
+  "locations": [
+    { "name": "Sample City", "address": "9 Sample Way, Sample City, ST 00000", "phoneDisplay": "(555) 014-4200", "phoneTel": "+15550144200" }
+  ],
+  "trustItems": [
+    { "big": "Free", "small": "Roof Inspections" },
+    { "big": "Written", "small": "Estimates" },
+    { "big": "Licensed", "small": "{{licenseShort}}" },
+    { "big": "Warrantied", "small": "Workmanship" }
+  ],
+  "servicesLede": "From a few missing shingles to a full tear-off and replacement, look no further than {{businessName}}.",
+  "services": [
+    { "name": "Roof Replacement", "blurb": "Full tear-off and replacement with quality materials and a clean site." },
+    { "name": "Roof Repair", "blurb": "Leaks, flashing and damaged sections repaired before they spread." },
+    { "name": "Shingle Roofing", "blurb": "Architectural shingles installed to manufacturer spec." },
+    { "name": "Metal Roofing", "blurb": "Standing seam and panel metal roofs built to last decades." },
+    { "name": "Gutter Installation", "blurb": "Seamless gutters and downspouts sized for your roof." },
+    { "name": "Skylight Installation", "blurb": "New skylights installed and flashed watertight." },
+    { "name": "Storm Damage Repair", "blurb": "Fast tarping and repair after wind and hail, with photo documentation." },
+    { "name": "Roof Inspections", "blurb": "Honest inspections with photos and a written condition report." }
+  ],
+  "sectorsLede": "One licensed crew for homes and small businesses across the Sample City area.",
+  "sectors": [
+    { "name": "Residential", "blurb": "Homes, repairs and replacements" },
+    { "name": "Commercial", "blurb": "Offices, retail and warehouses" }
+  ],
+  "aboutHeading": "Licensed and Local",
+  "aboutParagraphs": [
+    "Our roofers are licensed, insured and proud of a clean job site. You can rest easy, because your roof will be in skilled hands.",
+    "This is a sample business created to demonstrate the trades demo template. No real company is depicted. {{licenseLabel}}."
+  ],
+  "locationsHeading": "One Location, One Call Away",
+  "locationsLede": "Call the office and talk to a real person, day or night.",
+  "estimateLede": "Tell us what you need. After a storm, call instead, we will get you covered.",
+  "estimateExtraOptions": ["Storm Damage", "Something else"],
+  "messagePlaceholder": "A few details help us send the right roofer.",
+  "formNote": "Demo form: this preview does not send anything yet. On the live site, requests go straight to the {{businessName}} office.",
+  "thanksText": "Thanks, your request is noted. On the live site this would go straight to {{businessName}}, and for anything urgent you can call {{locations.0.name}} at {{locations.0.phoneDisplay}} any time, day or night.",
+  "footerHighlights": "Free Inspections | Written Estimates | Warrantied Work",
+  "sourceCredit": "Sample content written for this template demo. No real business is depicted."
+}
